@@ -1,0 +1,12 @@
+/ {
+    gpiocustom {
+        compatible = "gpio-keys";
+        gpiocus14: gpiocus_14 {
+            gpios = <&gpioc 14 GPIO_ACTIVE_LOW>;
+            label = "Custom gpio 14";
+        };
+    };
+    aliases {
+        gpiocus14 = &gpiocus14;
+    };
+};
